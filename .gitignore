@@ -1,1 +1,4 @@
 /commands
+/backend/.env
+/backend/*.pyc
+/backend/__pycache__
