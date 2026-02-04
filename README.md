@@ -2,10 +2,16 @@
 
 A full-stack Rock Paper Scissors game where you play against an AI powered by **Groq's Llama 3.1** model. Built with **Flutter** (frontend) and **FastAPI** (backend).
 
+## 🌐 Live Demo
+
+🎮 **Play Now:** [https://rockpaperscissor-with-groq.netlify.app](https://rockpaperscissor-with-groq.netlify.app)
+
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq_AI-FF6B6B?style=for-the-badge&logo=openai&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
 ## ✨ Features
 
@@ -18,12 +24,18 @@ A full-stack Rock Paper Scissors game where you play against an AI powered by **
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-|-----------|------------|
-| Frontend | Flutter (Dart) |
-| Backend | FastAPI (Python) |
-| AI Model | Llama 3.1 via Groq API |
-| Deployment | Render |
+| Component | Technology | Deployment |
+|-----------|------------|------------|
+| Frontend | Flutter (Dart) | **Netlify** |
+| Backend | FastAPI (Python) | **Render** |
+| AI Model | Llama 3.1 via Groq API | - |
+
+## 🚀 Deployment
+
+| Service | Platform | URL |
+|---------|----------|-----|
+| Frontend | Netlify | [rockpaperscissor-with-groq.netlify.app](https://rockpaperscissor-with-groq.netlify.app) |
+| Backend | Render | [rockpaperscissor-nizp.onrender.com](https://rockpaperscissor-nizp.onrender.com) |
 
 ## 📁 Project Structure
 
@@ -43,7 +55,7 @@ rockpaperscissor/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Local Development)
 
 ### Prerequisites
 
@@ -120,7 +132,7 @@ rockpaperscissor/
 ### Example Request
 
 ```bash
-curl -X POST http://localhost:8001/play \
+curl -X POST https://rockpaperscissor-nizp.onrender.com/play \
   -H "Content-Type: application/json" \
   -d '{"text": "Rock"}'
 ```
@@ -141,18 +153,6 @@ curl -X POST http://localhost:8001/play \
   "message": ""
 }
 ```
-
-## 🚀 Deployment
-
-### Deploy to Render
-
-1. Push code to GitHub
-2. Go to [Render Dashboard](https://dashboard.render.com)
-3. Click "New" → "Blueprint"
-4. Connect your GitHub repository
-5. Render will auto-detect `render.yaml`
-6. Set `GROQ_API_KEY` environment variable in Render dashboard
-7. Deploy!
 
 ## 🎮 How to Play
 
