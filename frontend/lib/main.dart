@@ -31,7 +31,8 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-  static const String baseUrl = 'http://127.0.0.1:8001';
+  static const String baseUrl = 'https://rockpaperscissor-nizp.onrender.com';
+
 
   String _userMove = '';
   String _aiMove = '';
