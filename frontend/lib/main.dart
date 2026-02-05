@@ -64,7 +64,7 @@ class _GameScreenState extends State<GameScreen> {
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
-        print("RESPONSE ===> $data");
+        debugPrint("RESPONSE ===> $data");
 
         setState(() {
           _userMove = data['user'] ?? '';
@@ -99,7 +99,7 @@ class _GameScreenState extends State<GameScreen> {
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
-        print("RESET ===> $data");
+        debugPrint("RESET ===> $data");
 
         setState(() {
           _userMove = '';
@@ -113,12 +113,14 @@ class _GameScreenState extends State<GameScreen> {
           _finalResult = '';
         });
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Game Reset! Ready to play again.'),
-            backgroundColor: Colors.green,
-          ),
-        );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Game Reset! Ready to play again.'),
+              backgroundColor: Colors.green,
+            ),
+          );
+        }
       } else {
         _showError('Failed to reset game');
       }
