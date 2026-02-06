@@ -6,6 +6,10 @@ A full-stack Rock Paper Scissors game where you play against an AI powered by **
 
 🎮 **Play Now:** [https://rockpaperscissor-with-groq.netlify.app](https://rockpaperscissor-with-groq.netlify.app)
 
+## 🎬 Demo
+
+![Rock Paper Scissors Demo](app_video.gif)
+
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
