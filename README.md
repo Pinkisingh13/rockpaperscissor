@@ -1,6 +1,7 @@
 # 🎮 Rock Paper Scissors AI Game
 
 A full-stack Rock Paper Scissors game where you play against an AI powered by **Groq's Llama 3.1** model. Built with **Flutter** (frontend) and **FastAPI** (backend).
+⭐ Star this repo if you found it helpful!
 
 ## 🌐 Live Demo
 
@@ -178,15 +179,3 @@ curl -X POST https://rockpaperscissor-nizp.onrender.com/play \
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-Built with ❤️ using Flutter, FastAPI, and Groq AI
-
----
-
-⭐ Star this repo if you found it helpful!
